@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div>
+        <h1>Inventory Form</h1>
+        <div>
+            <input type="text" id="item_name" placeholder="Enter Item Name"/>
+        </div>
+        <div>
+            <input type="text" id="item_manufacturer" placeholder="Manufacturer"/>
+        </div>
+        <div>
+            <input type="text" id="item_quantity" placeholder="Quantity"/>
+        </div>
+        <div>
+            <select id="quality">
+                <option selected value="">--Quality of item--</option>
+                <option value="New">New</option>
+                <option value="Good">Good</option>
+                <option value="Some Damage">Some Damage</option>
+                <option value="Needs Repairs">Needs Repairs</option>
+                <option value="Unrepairable">Unrepairable</option>
+            </select>
+        </div>
+        <div>
+            <textarea id="description" name="description" placeholder="Description..." style="height: 100px;"></textarea>
+        </div>
+        <div>
+            <input type="button" id="bt" value="Save data to file" onclick="saveFile()" />
+          </div>
+    </div>
+    <script src="index.js"></script>
+	
+  </body>
+</html>
